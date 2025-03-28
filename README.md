@@ -1,7 +1,3 @@
-<div align="center">
-<img src="https://github.com/user-attachments/assets/5fc7f121-259c-492c-8bca-f15fe7eb830c" alt="GOAT" width="100px" height="auto" style="object-fit: contain;">
-</div>
-
 # Model Context Protocol
 ## 🚀 Quickstart
 
