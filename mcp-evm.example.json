@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "goat-evm": {
+            "command": "node",
+            "args": ["/ABSOLUTE/PATH/TO/PARENT/model-context-protocol/build/evm.js"],
+            "env": {
+                "WALLET_PRIVATE_KEY": "WALLET_PRIVATE_KEY",
+                "RPC_PROVIDER_URL": "https://public-en-baobab.klaytn.net"
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+
+
+> goat-examples-model-context-protocol@0.0.0 build /Users/avdheshcharjan/goat/typescript/examples/by-framework/model-context-protocol
+> tsc && node -e "require('fs').chmodSync('build/evm.js', '755')" && node -e "require('fs').chmodSync('build/solana.js', '755')"
+
