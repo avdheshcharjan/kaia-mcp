@@ -1,7 +1,7 @@
 # Model Context Protocol
 ## 🚀 Quickstart
 
-This example shows you how to create a MCP Server to connect with Kaia blockchain with Claude for Desktop.
+This example shows you how to create a MCP Server to connect with Kaia blockchain using Claude for Desktop.
 
 It is implemented for both Kairos Testnet (DEFAULT) and Kaia Mainnet but can be updated to support any other chain, wallet and series of tools.
 
