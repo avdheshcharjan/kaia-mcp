@@ -49,7 +49,7 @@ This tells Claude for Desktop:
 4. Restart Claude for Desktop.
 
 **NOTE**: When making changes to the code you need to make sure to:
-1. Run `pnpm build` in the `model-context-protocol` folder to generate the updated `evm.js` file.
+1. Run `pnpm build` in the `kaia-mcp` folder to generate the updated `evm.js` file.
 2. If you update the json file: copy it again to the `~/Library/Application Support/Claude/` directory, or update the `claude_desktop_config.json` file with the new values. You will also need to restart Claude.
 
 ## Usage
