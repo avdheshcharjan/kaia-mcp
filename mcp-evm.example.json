@@ -1,6 +1,6 @@
 {
     "mcpServers": {
-        "goat-evm": {
+        "kaia-mcp": {
             "command": "node",
             "args": ["/ABSOLUTE/PATH/TO/PARENT/model-context-protocol/build/evm.js"],
             "env": {

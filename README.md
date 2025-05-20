@@ -26,7 +26,7 @@ pnpm build
 cp mcp-evm.example.json mcp-evm.json 
 ```
 
-2. Update the json file with your values for either EVM or Solana:
+2. Update the json file with your values for either EVM:
 - Absolute path to the parent folder of the `kaia-mcp` folder, you can get it by running `pwd` in the `kaia-mcp` folder
 - `WALLET_PRIVATE_KEY`
 - `RPC_PROVIDER_URL`
@@ -39,7 +39,7 @@ cp mcp-evm.json ~/Library/Application\ Support/Claude/claude_desktop_config.json
 ```
 
 This tells Claude for Desktop:
-- There’s are MCP servers named “goat-evm”
+- There’s are MCP servers named kaia-mcp”
 - Launch it by running the specified command
 
 4. Restart Claude for Desktop.
