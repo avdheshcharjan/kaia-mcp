@@ -11,9 +11,10 @@ import { USDC, erc20 } from "@goat-sdk/plugin-erc20";
 import { getOnChainTools } from "@goat-sdk/adapter-model-context-protocol";
 import { sendETH } from "@goat-sdk/wallet-evm";
 import { viem } from "@goat-sdk/wallet-viem";
-import { Packages } from "@kaiachain/kaia-agent-kit";
+import { Packages, PackagesEnum } from "@kaiachain/kaia-agent-kit";
 // Create wallet using ethers
 import { JsonRpcProvider, Wallet, Contract, Network } from "ethers";
+import { Kaia } from "@kaiachain/kaia-agent-kit";
 
 // 1. Create the wallet client
 const account = privateKeyToAccount(process.env.WALLET_PRIVATE_KEY as `0x${string}`);
@@ -55,7 +56,8 @@ const kaiaWallet = new Wallet(process.env.WALLET_PRIVATE_KEY as string, provider
 // 2. Get the onchain tools for the wallet
 const toolsPromise = getOnChainTools({
     wallet: viem(walletClient),
-    plugins: [sendETH(), erc20({ tokens: [USDC] })],
+    // plugins: [sendETH(), erc20({ tokens: [USDC] })],
+    plugins: [Kaia({KAIA_KAIASCAN_API_KEY: process.env.KAIA_KAIASCAN_API_KEY, packages: []}) as any]
 });
 
 // Standard ERC20 ABI for token transfers
@@ -181,9 +183,9 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     const tools = listOfTools();
     
     // Add kaia web3 tools to the list
-    Object.keys(kaiaTools).forEach(tool => {
-        tools.push(kaiaTools[tool] as any);
-    });
+    //Object.keys(kaiaTools).forEach(tool => {
+    //    tools.push(kaiaTools[tool] as any);
+    //});
     
     return { tools };
 });
